@@ -1,0 +1,237 @@
+/* css de la pagina principal */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+	background-color: whitesmoke;
+	color: #333;
+	line-height: 1.6;
+}
+
+/*header*/
+header {
+	background-image: url("santa ana1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background: #d5f5e3 ;
+	
+}
+.nav-links{
+	display: flex;
+	gap: 500px;
+	padding: 0;
+}
+
+.nav-links a {
+	color: black;
+	text-decoration: none;
+	margin-left: 2px;
+	transition: 0.3s;
+
+}
+
+.nav-links a:hover {
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	padding: 4px;
+	
+}
+
+.titulo-text {
+	max-center: 700px;
+
+}
+
+.titulo-text h1 {
+	font-size: 50px;
+	margin-bottom: 5px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	color: #d5f5e3;
+}
+
+.titulo-text P {
+	font-size: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	color:  gray;
+	background-color: rgba(8, 0, 0, 1.0);
+} 
+
+/* secciones*/
+
+section {
+	padding: 5rem 40%;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 3px;
+	color: grey;
+	position: relative;
+}
+
+.section-title::after {
+	content: ' ';
+	display: block;
+	width: 270px;
+	height: 3px;
+	background: rgba(8, 0, 0, 1.0);
+	margin: 4px;
+}
+
+/* tarjetas de boton de los lugares*/
+
+.contenedor-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap:20px;	
+	padding: 10px;
+	width: 100%;
+	max-width: 100%;
+	margin-left: 0;
+	justify-content: center;
+
+}
+
+.card {
+	flex: 0 0 auto;
+	width: 220px;
+	min-width: 200px;
+	background: #d5f5e3;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+	transition: 0.4s;
+    position: relative;
+	cursor: pointer;
+	text-align: left;
+	flex-direction: column;
+	
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-imagen {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition:  0.4s;
+	border-radius: 10px 10px 0 0;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.card:hover .card-imagen {
+	filter: brightness(0.5);
+}
+
+.card-content {
+	padding: 0.8rem;
+	position: relative;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card p {
+	font-size: 0.8 rem;
+	margin-bottom: 0;
+}
+
+.card h3 {
+	color: var(--primary);
+	margin-bottom: 0.5rem;
+	transition: color 0.3s;
+
+}
+
+.card:hover h3 {
+	color: greenyellow;
+}
+
+.card::before {
+	content: 'Ver Más';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1.8);
+	background-color: rgba(142, 59, 70, 0.9);
+	color: white;
+	padding: 0.8rem 1.5rem;
+	border-radius: 50px;
+	font-weight: bold;
+	opacity: 0;
+	transition: 0.3s;
+	z-index: 20;
+}
+
+.card:hover::before {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1); 
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 2 columnas SIEMPRE */
+	gap: 20px;
+	width: 100%;
+}
+
+.gallery-items {
+	width: 100%; 
+	height: 200px;
+	border-radius: 8px;
+	flex-grow: 1;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+.gallery-items:hover {
+	transform: scale(1.03);
+}
+
+/*footer*/ 
+footer {
+	background: #d5f5e3; 
+	gap: 5px; 
+	color: black;
+	padding: 3rem 10%;
+	text-align: center;
+}
+
+
+
+
