@@ -1,84 +1,87 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lugares Turísticos de Santa Ana</title>
-	<link rel="stylesheet" href="style.css"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Historia de las Computadoras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-	<header style="background-image: url('encuentros.jpg');">
-		<nav>
-			<div class="nav-links">
-				<a href="#">Turísticos</a>
-				<a href="#">Galería</a>
-				<a href="#">Contacto</a>
-			</div>
-		</nav>
-		<div class="titulo-text">
-			<h1>Parque Eco-Turistico los encuentros</h1>
-			<p>Ubicacion,Turismo, entre otros.</p>
-		</div>
-	</header>
+  <div class="card">
+    <h1>HISTORIA DE LAS COMPUTADORAS</h1>
+    <h2><center>!BIENVENIDO!</center></h2>
 
-	<section>
-		<h2 class="section-title">Lugares Turísticos</h2>
-		<div class="contenedor-cards">
-			<div class="card">
-				<div class="card-imagen" style="background-image: url('eolicas.jpg');"></div>
-				<div class="card-content">
-					<h3>Parque Eólico</h3>
-					<p>Es el parque eólico más grande de Centroamérica. Ofrece a los visitantes la oportunidad de disfrutar de la energía renovable y hermosos paisajes.</p>
-				</div>
-			</div>
+    <form class="formulario"
+          id="formulario"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSf0CfGGajyyKXCAmtIpX_cewS3yQXFYn6IUsyhQPf-gdjx2kg/formResponse"
+          method="POST"
+          target="_self">
+          
+      <!-- Campo Nombre -->
+      <input type="text" name="entry.1139776225" placeholder="Nombre:" required />
 
-			<div class="card">
-				<div class="card-imagen" style="background-image: url('cuevas.jpg');"></div>
-				<div class="card-content">
-					<h3>Cuevas De Ayasta</h3>
-					<p>Poseen un valor arqueológico muy importante para la historia de Honduras, con riquezas culturales de los Lencas.</p>
-				</div>
-			</div>
+      <!-- Campo Correo -->
+      <input type="email" name="entry.1897593329" placeholder="Correo:" required />
 
-			<div class="card">
-				<div class="card-imagen" style="background-image: url('cruz.jpg');"></div>
-				<div class="card-content">
-					<h3>La Cruz de Chatarra</h3>
-					<p>Monumento espiritual y turístico, con un clima y vista agradables.</p>
-				</div>
-			</div>
+      <!-- Botón -->
+      <button type="submit">Entrar</button>
+    </form>
 
-			<div class="card">
-				<div class="card-imagen" style="background-image: url('laguna.jpg');"></div>
-				<div class="card-content">
-					<h3>La Laguna del Pescado</h3>
-					<p>Conocida por una leyenda escrita por el Dr. Jesús Aguilar Paz, está ubicada cerca de Tegucigalpa a más de 1,200 metros de altura.</p>
-				</div>
-			</div>
+    <!-- Mensaje de éxito -->
+    <p id="mensaje" style="color: green; font-weight: bold; display:none; margin-top: 1em;"></p>
 
-			<div class="card">
-				<div class="card-imagen" style="background-image: url('parque los encuentros.jpg');"></div>
-				<div class="card-content">
-					<h3>Parque Los Encuentros</h3>
-					<p>Espacio recreativo y ecológico ideal para familias y visitantes que buscan disfrutar de la naturaleza. Cuenta con áreas de descanso, piscinas y zonas verdes.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <p>
+      La historia de las computadoras es el relato de cómo el ser humano ha desarrollado herramientas cada vez más avanzadas para procesar información, resolver problemas y automatizar tareas. Desde los primeros dispositivos mecánicos, como el ábaco en la antigüedad, hasta las modernas supercomputadoras y sistemas basados en inteligencia 
+      artificial, la evolución de la informática ha transformado radicalmente la sociedad.
+    </p>
+    <p>
+      Su desarrollo se divide en varias generaciones, cada una marcada por un avance tecnológico clave: el uso de tubos de vacío, transistores, circuitos integrados y microprocesadores. A lo largo de este camino, las computadoras pasaron de ocupar habitaciones enteras y realizar cálculos básicos, a ser portátiles, veloces, con gran capacidad de almacenamiento y conexión global a través de internet.
+    </p>
+    <p>
+      Comprender esta evolución no solo nos ayuda a valorar los logros tecnológicos alcanzados, sino también a reflexionar sobre el futuro de la computación y su impacto en todos los aspectos de la vida humana.
+    </p>
 
-	<section style = "padding: 2rem 2rem;">
-		<h2 style="text-align: center; color: gray; font-size: 28px; margin-bottom: 10px;">Sobre el Parque Los Encuentros</h2>
-		<p style=" text-align: justify; font-size: 18px ;">
-			El Parque Los Encuentros es nhun espacio recreativo y ecológico ubicado en Santa Ana. Este lugar combina áreas de descanso, actividades al aire libre, piscinas y zonas verdes, siendo ideal para familias, amigos y visitantes que desean relajarse rodeados de naturaleza. Es uno de los sitios más visitados de la zona por su tranquilidad y belleza.
-		</p>
-	</section>
-	<footer style="background: #d5f5e3; color: black; text-align: center; padding: 0.5rem 0; font-size: 13px; border-top: 1px solid #444;">
-	<p><strong>Santa Ana Turismo</strong></p>
-	<p>© 2025 Santa Ana Turismo. Todos los derechos reservados.</p>
-    </footer>
+   <img src="imagenes/compu1.jpg" alt="Foto de una computadora" width="300" height="200">
 
-	<!-- Llamado al archivo script.js -->
-	<script src="script.js"></script>
+
+
+    <footer>© 2025 HISTORIA DE LAS COMPUTADORAS</footer>
+  </div>
+
+  <script>
+    const form = document.getElementById('formulario');
+    const mensaje = document.getElementById('mensaje');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Evita la recarga/redirección
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors', // evita problemas con CORS, no espera respuesta
+        body: formData
+      }).then(() => {
+        mensaje.textContent = "¡Registro exitoso! Redirigiendo...";
+        mensaje.style.color = "blue";
+        mensaje.style.display = "block";
+
+        form.reset();
+
+        // Redirigir después de 2 segundos
+        setTimeout(() => {
+          window.location.href = "abaco1.html"; // Cambia esto por tu URL real
+        }, 2000);
+      }).catch(() => {
+        mensaje.textContent = "Ocurrió un error, intenta nuevamente.";
+        mensaje.style.color = "red";
+        mensaje.style.display = "block";
+      });
+    });
+  </script>
 
 </body>
 </html>

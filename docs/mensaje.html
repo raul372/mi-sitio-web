@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Historia de las Computadoras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="card">
+    <!-- Botones de navegación arriba -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <!-- Botón anterior -->
+      <a href="abaco9.html">
+        <button>Anterior</button>
+      </a>
+
+      <!-- Botón volver al inicio -->
+      <a href="index.html">
+        <button>Volver al Inicio</button>
+      </a>
+    </div>
+
+    <h1>HISTORIA DE LAS COMPUTADORAS</h1>
+
+    <h2 style="color: black; text-align: center; margin-top: 0;">¡Déjanos tu Opinión o Sugerencia!</h2>
+
+    <form class="formulario" id="formContacto"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdjb3OW-3rvsOr4eWn3ZKxTI1JtdgESg-rn_09xP31jkKqKNQ/formResponse"
+      method="POST" target="_self">
+
+      <input type="text" name="entry.2085502202" placeholder="Nombre" required />
+      <input type="email" name="entry.561595340" placeholder="Correo" required />
+      <textarea name="entry.1301186318" placeholder="Mensaje" required
+        style="padding: 12px 15px; font-size: 16px; border: 1.5px solid #ccc; border-radius: 8px; font-family: 'Open Sans', sans-serif;"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje-confirmacion" style="display: none; text-align: center; font-weight: bold; margin-top: 15px; color: green;">
+      ¡Tu mensaje ha sido enviado correctamente!
+    </p>
+
+    <footer style="margin-top: 40px;">
+      <ul style="list-style: disc; padding-left: 20px; font-size: 14px; color: #555;">
+        <li>Contenido: Elaborado por Antony, Junior y Carlos Sair</li>
+        <li>Imágenes: Wikimedia Commons / Archivíblicos</li>
+        <li>Fuentes: Libros y artículos de historia de la informática.</li>
+        <li style="margin-top: 20px;">© 2025 HISTORIA DE LAS COMPUTADORAS</li>
+      </ul>
+    </footer>
+  </div>
+
+  <script>
+    const form = document.getElementById('formContacto');
+    const mensaje = document.getElementById('mensaje-confirmacion');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      }).then(() => {
+        mensaje.style.display = 'block';
+        mensaje.textContent = '¡Tu mensaje ha sido enviado correctamente!';
+        mensaje.style.color = 'green';
+        form.reset();
+      }).catch(() => {
+        mensaje.style.display = 'block';
+        mensaje.textContent = 'Ocurrió un error. Intenta nuevamente.';
+        mensaje.style.color = 'red';
+      });
+    });
+  </script>
+</body>
+</html>
