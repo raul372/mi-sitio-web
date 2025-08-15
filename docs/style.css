@@ -154,4 +154,80 @@ button:hover {
   text-align: right;
 }
 /* ----------------------------------------
- 
+ /* ===============================
+   MEDIA QUERIES PARA RESPONSIVIDAD
+   =============================== */
+
+/* Tablets (pantallas menores a 992px) */
+@media (max-width: 991px) {
+  body {
+    padding: 30px 20px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    padding: 25px 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Móviles (pantallas menores a 600px) */
+@media (max-width: 599px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  .card {
+    padding: 20px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .formulario {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  img {
+    margin: 15px auto;
+  }
+}
