@@ -198,15 +198,6 @@ button:hover {
     padding: 0 10px;
   }
 
-  button {
-    width: 100%;
-    font-size: 15px;
-  }
-
-  .siguiente-btn {
-    text-align: center;
-  }
-
   .card > div {
     flex-direction: column;
     gap: 10px;
